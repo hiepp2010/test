@@ -9,7 +9,7 @@ const port = 4001;
 const results = [];
 
 app.listen(port, async () => {
-  fs.createReadStream("./combined_data.csv")
+  fs.createReadStream("./combined_data.xlsx")
     .pipe(csv())
     .on("data", (data) => {
       // Process each row of data
